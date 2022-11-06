@@ -6,7 +6,7 @@ from tutorials.models import Tutorial
 def test_homepage_access():
     url = reverse('home')
     assert url == "/"
-@pytest.fixture
+'''@pytest.fixture
 def new_tutorial(db):
     tutorial = Tutorial.objects.create(
         title='Pytest',
@@ -21,4 +21,4 @@ def test_search_tutorials(new_tutorial):
 def test_update_tutorial(new_tutorial):
     new_tutorial.title = 'Pytest-Django'
     new_tutorial.save()
-    assert Tutorial.objects.filter(title='Pytest-Django').exists()
+    assert Tutorial.objects.filter(title='Pytest-Django').exists()'''
